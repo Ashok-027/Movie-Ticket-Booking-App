@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 @CrossOrigin
-@RequestMapping("api/public")
+// @RequestMapping("api/public")
 public class CustomerController {
 
     @Autowired
