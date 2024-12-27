@@ -21,7 +21,7 @@ public class CustomerController {
     @Autowired
     RestTemplate restTemplate;
 
-    @PostMapping(path = "/registration")
+    @PostMapping("/registration")
     public ResponseEntity<Customer> saveCustomer(@RequestBody CustomerDto customerDto, String token) {
         /*HttpHeaders headers=new HttpHeaders();
         headers.add("Authorization",token);
