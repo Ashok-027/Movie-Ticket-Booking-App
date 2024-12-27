@@ -33,7 +33,7 @@ public class CustomerController {
 
     }
 
-    @GetMapping(path="/get/{email}")
+    @GetMapping("/get/{email}")
     public Customer getAllCustomerDetails(@PathVariable("email") String emailId){
         return customerService.getAllCustomerDetails(emailId);
         //return new CustomerDto(customerDtos,HttpStatus.OK);
