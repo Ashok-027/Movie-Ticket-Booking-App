@@ -23,11 +23,11 @@ public class CustomerController {
 
     @PostMapping("/registration")
     public ResponseEntity<Customer> saveCustomer(@RequestBody CustomerDto customerDto, String token) {
-        /*HttpHeaders headers=new HttpHeaders();
+        HttpHeaders headers=new HttpHeaders();
         headers.add("Authorization",token);
         HttpEntity<String> entity=new HttpEntity<>("body", headers);
         TokenData tokenData=restTemplate .postForObject("http://ltin402623.cts.com:8085/api/private/authorization",entity, TokenData.class);
-        */
+        
         Customer customer = customerService.addCustomer(customerDto);
         return new ResponseEntity<>(customer, HttpStatus.CREATED);
 
