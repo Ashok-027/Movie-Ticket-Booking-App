@@ -14,7 +14,7 @@ public class CustomerServiceImpl implements CustomerService{
     @Autowired
     private CustomerRepo customerRepo;
 
-    //private String authUrl="http://ltin402623.cts.com:8085/api/private/authorization";
+    private String authUrl="http://ltin402623.cts.com:8085/api/private/authorization";
     @Override
     public Customer addCustomer(CustomerDto customerDto) {
 
